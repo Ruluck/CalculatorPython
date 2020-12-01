@@ -1,5 +1,34 @@
-num1 = input("Enter a number: ")
-num2 = input("Enter a number: ")
-result = float(num1) + float(num2)
+def add(a,b):
+    result = a + b
+    print(result)
 
-print(result)
+def sub(a,b):
+    result = a - b
+    print(result)
+
+def mul(a,b):
+    result = a * b
+    print(result)
+
+def div(a,b):
+    result = a / b
+    print(result)
+
+a=float(input("Enter the first number: "))
+b=float(input("Enter the second number: "))
+op=input("Enter the operator: ")
+
+if op == "+":
+    add(a,b)
+
+elif op == "-":
+    sub(a,b)
+
+elif op == "*":
+    mul(a,b)
+
+elif op == "/":
+    div(a,b)
+
+else:
+    print("Invalid")
